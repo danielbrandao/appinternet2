@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-4" id="topo">
+    <h1>HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+    <h3>Tutorial para Iniciantes</h3>
+    <nav class="container">
+        <a href="#introducao" class="text-white me-3">Introdução</a>
+        <a href="#tabela-e-lista" class="text-white me-3">Tabela e Lista</a>
+        <a href="#formulario" class="text-white">Formulário</a>
+        <a href="#footer" class="text-white me-3">Links</a>
+
+      </nav>
+  </header>
+
+  <!-- Seção HTML -->
+  <section class="container my-5" id="introducao">
+    <div class="row align-items-center">
+      <div class="col-md-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" class="img-fluid" alt="HTML5 Logo">
+      </div>
+      <div class="col-md-10">
+        <p>
+          <strong><ins>HTML</ins></strong>
+          <i>(Linguagem de marcação de Hipertexto)</i> é o bloco de construção mais básico da web.
+          <mark>Define o significado e a estrutura do conteúdo da web</mark>.
+          Outras tecnologias do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento
+          <em>(JavaScript)</em> de uma página web.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabela e Lista Lado a Lado -->
+  <div class="container my-5" id="tabela-e-lista">
+    <div class="row">
+      <section class="col-md-6">
+        <h2>Tags HTML</h2>
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Tags HTML</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>linha 1, valor 1</td>
+              <td>linha 1, valor 2</td>
+            </tr>
+            <tr>
+              <td>linha 2, valor 1</td>
+              <td>linha 2, valor 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="col-md-6">
+        <h2>Protocolos da Web</h2>
+        <ol>
+          <li>HTTP - Hypertext Transfer Protocol</li>
+          <li>FTP - File Transfer Protocol</li>
+        </ol>
+      </section>
+    </div>
+  </div>
+
+  <!-- Formulário -->
+  <section class="container my-5" id="formulario">
+    <h2>Entre em contato</h2>
+    <form method="post" action="obrigado.html">
+      <div class="mb-3">
+        <label class="form-label">Nome:</label>
+        <input type="text" name="nome" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="idade">Idade: 
+          <h2><output id="idadeValor" for="idade">50</output></h2>
+        </label>
+        <input type="range" id="idade" name="idade" min="0" max="100" value="50" tooltip=""
+               class="form-range" 
+               oninput="idadeValor.value = this.value">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">E-mail:</label>
+        <input type="email" name="email" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Assunto:</label>
+        <select name="assunto" class="form-select">
+          <option value="Reclamação">Reclamação</option>
+          <option value="Elogio" selected>Elogio</option>
+          <option value="Sugestão">Sugestão</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Mensagem:</label>
+        <textarea name="mensagem" class="form-control"></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" name="termo" class="form-check-input" required>
+        <label class="form-check-label">Aceito o tratamento de dados deste site.</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4" id="footer">
+    <div class="container">
+      <p>Links Rápidos:</p>
+      <a href="#topo" class="text-white me-3">Topo</a>
+      <a href="#introducao" class="text-white me-3">Introdução</a>
+      <a href="#tabela-e-lista" class="text-white me-3">Tabela e Lista</a>
+      <a href="#formulario" class="text-white">Formulário</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
